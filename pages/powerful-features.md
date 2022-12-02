@@ -1,7 +1,8 @@
 # Powerful Features for Patscenario? ⚡
+
 This page covers some of Evidence's more powerful features: Loops and Logic.
 
-# Und imagine hier oben ist ein Modal, in dem man seine Eingaben machen kann und dann kommen unten die Daten raus.
+# Und yeah imagine hier oben ist ein Modal, in dem man seine Eingaben machen kann und dann kommen unten die Daten raus.
 
 # Loops
 
@@ -20,14 +21,13 @@ Die Daten kommen per SQL direkt hier rein und werden durch - ja was wohl - Svelt
 ## Patent Filing Fees per Countries
 
 {#each category_sales as category_row}
-- {category_row.Country}: {category_row.Filing_Fee} {category_row.Currency}
 
+- {category_row.Country}: {category_row.Filing_Fee} {category_row.Currency}
 
 {/each}
 
-
-
 # Und noch ein paar Daten zur Demonstration
+
 ```orders_per_day
 Select
 Country,
@@ -48,7 +48,6 @@ order by 2 desc
     rows=50 
 />
 
-
 ```claim_fee
 Select
 Country,
@@ -65,5 +64,3 @@ order by 2 desc
     x=Country
     y=Claim_Fee
 />
-
-
